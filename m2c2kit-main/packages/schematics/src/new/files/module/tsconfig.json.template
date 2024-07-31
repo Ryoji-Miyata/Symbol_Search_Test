@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "module": "es6",
+    "moduleResolution": "bundler",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "sourceMap": false,
+    // esbuild will build the module; tsc will type check and generate the declaration files
+    "declaration": true,
+    "emitDeclarationOnly": true,
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.js"],
+  "exclude": ["./src/runner.ts"]
+}

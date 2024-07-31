@@ -1,0 +1,11 @@
+.vscode-test/
+out/
+dist/
+dist-test/
+build/
+test-fixtures/
+node_modules/
+assets/
+*.handlebars
+website/**/*.md
+website/**/*.mdx

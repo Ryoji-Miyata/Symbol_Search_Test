@@ -1,0 +1,54 @@
+{
+  "name": "@m2c2kit/assessments-demo",
+  "description": "A demo of several m2c2kit assessments",
+  "version": "0.8.14",
+  "scripts": {
+    "serve": "concurrently \"rollup -c --watch --configServe\" \"tsc --watch\" --names rollup,typescript --prefix-colors auto,red",
+    "build": "npm run clean && tsc && rollup -c --configProd",
+    "build-webview": "npm run clean-webview && rollup -c rollup.config.webview.mjs --configProd --configNoHash",
+    "build-sw": "npm run clean && rollup -c --configProd --configServiceWorker",
+    "clean": "rimraf build dist .rollup.cache",
+    "clean-webview": "rimraf build dist-webview .rollup.cache"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Scott T. Yabiku",
+    "email": "syabiku@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m2c2-project/m2c2kit.git",
+    "directory": "packages/assessments-demo"
+  },
+  "homepage": "https://m2c2-project.github.io/m2c2kit",
+  "private": true,
+  "dependencies": {
+    "@m2c2kit/addons": "0.3.16",
+    "@m2c2kit/assessment-cli-starter": "0.8.16",
+    "@m2c2kit/assessment-color-dots": "0.8.17",
+    "@m2c2kit/assessment-color-shapes": "0.8.17",
+    "@m2c2kit/assessment-grid-memory": "0.8.17",
+    "@m2c2kit/assessment-symbol-search": "0.8.17",
+    "@m2c2kit/core": "0.3.19",
+    "@m2c2kit/db": "0.3.14",
+    "@m2c2kit/embedding": "1.0.12",
+    "@m2c2kit/session": "0.3.2",
+    "@m2c2kit/survey": "0.3.14"
+  },
+  "devDependencies": {
+    "@m2c2kit/build-helpers": "0.3.16",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "concurrently": "8.2.2",
+    "esbuild": "0.23.0",
+    "rimraf": "6.0.1",
+    "rollup": "4.18.1",
+    "rollup-plugin-copy": "3.5.0",
+    "rollup-plugin-esbuild": "6.1.1",
+    "rollup-plugin-livereload": "2.0.5",
+    "rollup-plugin-serve": "3.0.0",
+    "typescript": "5.5.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

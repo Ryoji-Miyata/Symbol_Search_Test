@@ -1,0 +1,37 @@
+{
+  "name": "@m2c2kit/schema-util",
+  "version": "0.1.9",
+  "description": "Utility tool to extract the schema used in m2c2kit assessment TypeScript source files",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "schema-util": "./build/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.11",
+    "esbuild": "0.23.0"
+  },
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Scott T. Yabiku",
+    "email": "syabiku@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m2c2-project/m2c2kit.git",
+    "directory": "packages/schema-util"
+  },
+  "homepage": "https://m2c2-project.github.io/m2c2kit",
+  "dependencies": {
+    "csv": "6.3.9",
+    "ts-morph": "23.0.0",
+    "yargs": "17.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

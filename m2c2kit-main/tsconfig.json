@@ -1,0 +1,32 @@
+{
+  "exclude": [
+    "**/node_modules",
+    "**/dist",
+    "**/build",
+    "**/__tests__",
+    "**/*.test*",
+    "**/*.spec*",
+    "**/coverage",
+    "**/website/static"
+  ],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "es6",
+    "module": "es6",
+    "lib": ["dom", "es6"],
+    "jsx": "react",
+    "downlevelIteration": true,
+    "strict": true,
+    "removeComments": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "emitDeclarationOnly": true,
+    "forceConsistentCasingInFileNames": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
+  }
+}

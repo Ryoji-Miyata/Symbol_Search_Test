@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "references": [{ "path": "../core" }, { "path": "../session" }],
+  "include": ["src"],
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": "src"
+  }
+}

@@ -1,0 +1,25 @@
+# build artifacts
+dist
+runner-build
+
+# Dependency directories
+node_modules
+
+# Output of 'npm pack'
+/*.tgz
+
+# Output of 'm2 zip'
+/*.zip
+
+# caches
+*.tsbuildinfo
+.rollup.cache
+
+# dotenv environment variables file
+.env
+.env.test
+.env.production
+
+# OS metadata
+**/.DS_Store
+**/thumbs.db

@@ -1,0 +1,51 @@
+{
+  "name": "@m2c2kit/db",
+  "version": "0.3.14",
+  "description": "A local database for storing m2c2kit data on the device",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/**",
+    "assets/**",
+    "metadata.json"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc --build && rollup -c",
+    "clean": "rimraf build build-nobundler dist .rollup.cache tsconfig.tsbuildinfo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Scott T. Yabiku",
+    "email": "syabiku@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m2c2-project/m2c2kit.git",
+    "directory": "packages/db"
+  },
+  "homepage": "https://m2c2-project.github.io/m2c2kit",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "26.0.1",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "rimraf": "6.0.1",
+    "rollup": "4.18.1",
+    "rollup-plugin-copy": "3.5.0",
+    "rollup-plugin-dts": "6.1.1",
+    "rollup-plugin-esbuild": "6.1.1",
+    "typescript": "5.5.3"
+  },
+  "dependencies": {
+    "@m2c2kit/core": "^0.3.19",
+    "dexie": "4.0.8"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

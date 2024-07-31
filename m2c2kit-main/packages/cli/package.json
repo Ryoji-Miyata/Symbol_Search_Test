@@ -1,0 +1,45 @@
+{
+  "name": "@m2c2kit/cli",
+  "version": "0.3.16",
+  "description": "Command line interface to create new m2c2kit apps",
+  "files": [
+    "dist/**"
+  ],
+  "bin": {
+    "m2": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "compile": "tsc",
+    "clean": "rimraf dist"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Scott T. Yabiku",
+    "email": "syabiku@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m2c2-project/m2c2kit.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://m2c2-project.github.io/m2c2kit",
+  "dependencies": {
+    "@angular-devkit/core": "^18.1.0",
+    "@angular-devkit/schematics": "^18.1.0",
+    "@inquirer/prompts": "5.1.3",
+    "@m2c2kit/schematics": "0.1.16",
+    "@schematics/angular": "^18.1.0",
+    "ansi-colors": "4.1.3",
+    "symbol-observable": "4.0.0",
+    "yargs-parser": "21.1.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "9.0.7",
+    "rimraf": "6.0.1",
+    "typescript": "5.5.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

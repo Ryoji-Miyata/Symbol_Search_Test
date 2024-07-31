@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "references": [{ "path": "../core" }, { "path": "../addons" }],
+  "include": ["src"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src"
+  }
+}
